@@ -1,0 +1,10 @@
+{
+  "stake_units": 1.0,
+  "seats": 1,
+  "stop_loss_fraction": 0.5,
+  "take_profit_fraction": 10.0,
+  "max_round_exposure_units": 4.0,
+  "minimum_confidence": 0.995,
+  "stable_frames_required": 3,
+  "live_clicks_enabled": false
+}
