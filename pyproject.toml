@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bjbot"
+version = "0.1.0"
+description = "Moteur local et garde-fous pour un assistant Blackjack Original"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+vision = [
+  "mss>=9,<11",
+  "opencv-python>=4.10,<5",
+  "numpy>=2,<3",
+]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+bjbot = "bjbot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
